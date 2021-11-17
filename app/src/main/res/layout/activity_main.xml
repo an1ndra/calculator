@@ -6,24 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-
-
-    <EditText
-        android:id="@+id/display"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/matEdt"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:autofillHints="false"
         android:hint="@string/edt"
-
-        android:inputType="none"
-        android:textAlignment="textEnd"
-        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="LabelFor" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!--this is the actual edit text which takes the input-->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:textAlignment="textEnd"
+            android:autofillHints="false"
+            android:textSize="36sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
 
 
@@ -58,7 +63,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="@id/display"
+        app:layout_constraintTop_toBottomOf="@id/matEdt"
         app:layout_constraintVertical_bias="0.96">
 
         <TableRow
