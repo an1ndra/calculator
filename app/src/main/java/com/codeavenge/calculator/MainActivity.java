@@ -12,8 +12,11 @@ import org.mariuszgromada.math.mxparser.Expression;
 
 import com.codeavenge.calculator.databinding.ActivityMainBinding;
 
+import java.util.Objects;
+
 public class MainActivity extends AppCompatActivity {
     ActivityMainBinding binding;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Disable android default keyboard when click edit text
         binding.display.setShowSoftInputOnFocus(false);
+        Objects.requireNonNull(getSupportActionBar()).hide();
 
         binding.display.setOnClickListener(new View.OnClickListener() {
             @Override
