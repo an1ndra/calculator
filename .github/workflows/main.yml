@@ -1,0 +1,5 @@
+- name: Build Android App
+  uses: sparkfabrik/android-build-action@v1.0.0
+  
+- name: Android Build
+  uses: vgaidarji/android-github-actions-build@v1.0.1
