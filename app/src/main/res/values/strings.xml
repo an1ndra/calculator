@@ -18,7 +18,7 @@
     <string name="multiply">×</string>
     <string name="add">+</string>
     <string name="subtract">-</string>
-    <string name="plusMinus">+/-</string>
+    <string name="plusMinus">Exit</string>
     <string name="point">.</string>
     <string name="equals">=</string>
     
